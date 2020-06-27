@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Linear Collection View</Title>
+      <Author>Oludayo Alli</Author>
+      <Description>Generates the basic implementation of Collection View with LinearItemsView</Description>
+      <Shortcut>colview</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="XAML">
+        <![CDATA[<CollectionView SelectionMode="$SelectionMode$" ItemsSource="{Binding }">
+            <CollectionView.Header>
+                <Grid>
+                    
+                </Grid>
+            </CollectionView.Header>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="$Orientation$" ItemSpacing="$ItemSpacing$"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.EmptyView>
+                <Label Text="No Item found." TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>SelectionMode</ID>
+          <ToolTip>Choose the SelectionMode for your list.</ToolTip>
+          <Default>Single</Default>
+        </Literal>
+        <Literal>
+          <ID>Orientation</ID>
+          <ToolTip>Choose the Orientation for your list.</ToolTip>
+          <Default>Vertical</Default>
+        </Literal>
+        <Literal>
+          <ID>ItemSpacing</ID>
+          <ToolTip>Specify the spacing between items.</ToolTip>
+          <Default>10</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Grid Collection View</Title>
+      <Author>Oludayo Alli</Author>
+      <Description>Generates the basic implementation of Collection View with GridItemsView</Description>
+      <Shortcut>colviewgrid</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="XAML">
+        <![CDATA[<CollectionView SelectionMode="$SelectionMode$" ItemsSource="{Binding }">
+            <CollectionView.Header>
+                <Grid>
+                    
+                </Grid>
+            </CollectionView.Header>
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="$Orientation$" Span="$Span$" VerticalItemSpacing="$VerticalSpacing$" HorizontalItemSpacing="$HorizontalSpacing$"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.EmptyView>
+                <Label Text="No Item found." TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>SelectionMode</ID>
+          <ToolTip>Choose the SelectionMode for your list.</ToolTip>
+          <Default>Single</Default>
+        </Literal>
+        <Literal>
+          <ID>Orientation</ID>
+          <ToolTip>Choose the Orientation for your list.</ToolTip>
+          <Default>Vertical</Default>
+        </Literal>
+        <Literal>
+          <ID>VerticalSpacing</ID>
+          <ToolTip>Specify the vertical spacing between items.</ToolTip>
+          <Default>10</Default>
+        </Literal>
+        <Literal>
+          <ID>HorizontalSpacing</ID>
+          <ToolTip>Specify the horizontal spacing between items.</ToolTip>
+          <Default>10</Default>
+        </Literal>
+        <Literal>
+          <ID>Span</ID>
+          <ToolTip>Specify the number of columns for your items.</ToolTip>
+          <Default>2</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
